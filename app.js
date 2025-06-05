@@ -3,7 +3,9 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 
 const userRoutes = require('./routes/userRoutes');
- 
+const taskRoutes = require('./routes/taskRoutes');
+const tasklist = require('./routes/tasklist'); // Assuming this is the correct path for task list routes    
+
 
 const app = express();
 connectDB();
